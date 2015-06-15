@@ -1,0 +1,21 @@
+<% unless session[:user]%>
+	<% if flash[:notice] %>
+		<div class="notice"><%= flash[:notice] %></div>
+	<% end %>
+	<h1>Login</h1>
+	<%= form_for :login, url: '/login', method: 'POST' do |f| %>
+		<p>
+			<%= f.label 'E-mail' %>
+			<br>
+			<%= f.text_field :email %>
+		</p>
+		<p>
+			<%= f.label :Password %>
+			<br>
+			<%= f.password_field :password %>
+		</p>
+		<p>
+			<%= f.submit %>
+		</p>
+	<% end %> 
+<% end %>

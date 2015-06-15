@@ -1,0 +1,18 @@
+<h1>Notificaciones</h1>
+<% unless @notifications.blank? %>
+	<% @notifications.each do |f| %>
+		<p>
+			<h2>Id</h2>
+			<br>
+			<%= f.arduino_id %>
+		</p>
+		<p>
+			<h2>Time</h2>
+			<br>
+			<%= f.time %>
+		</p>
+		<hr>
+	<% end %>
+<% else %>
+	<h3>No hay nuevas notificaciones por el momento</h3>
+<% end %>

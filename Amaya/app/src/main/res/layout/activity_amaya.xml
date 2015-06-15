@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#E17603"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Amaya">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/amaya_title"
+        android:id="@+id/amaya_title"
+        style="@style/Platform.ThemeOverlay.AppCompat.Dark"
+        android:textColor="#ff000000"
+        android:textSize="33sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:id="@+id/signup_txt"
+        android:layout_below="@+id/amaya_title"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/email"
+        android:id="@+id/email_txt"
+        android:layout_below="@+id/signup_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email_field"
+        android:layout_below="@+id/signup_txt"
+        android:layout_toRightOf="@+id/email_txt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/email_hint" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/password"
+        android:id="@+id/password_txt"
+        android:layout_below="@+id/email_field"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password_field"
+        android:layout_below="@+id/email_field"
+        android:layout_toRightOf="@+id/password_txt"
+        android:layout_alignRight="@+id/amaya_title"
+        android:layout_alignEnd="@+id/amaya_title"
+        android:hint="@string/password_hint" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:id="@+id/submit_form"
+        android:layout_below="@+id/password_field"
+        android:layout_centerHorizontal="true"
+        android:onClick="submitForm" />
+
+</RelativeLayout>

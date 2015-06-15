@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Amaya</string>
+    <string name="action_settings" />
+    <string name="amaya_title">Amaya Security Service</string>
+    <string name="signup">Registro</string>
+    <string name="email">E-mail:</string>
+    <string name="password">Contraseña:</string>
+    <string name="submit">Enviar</string>
+    <string name="email_hint">usuario@ejemplo.com</string>
+    <string name="gcm_defaultSenderId">152456792180</string>
+    <string name="password_hint">**********</string>
+    <string name="registered_txt">¡Ya estás registrado en el servicio!</string>
+    <string name="title_activity_notifications">Notifications</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>
