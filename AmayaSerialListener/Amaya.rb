@@ -22,7 +22,7 @@ if __FILE__ == $0
 		puts res.body
 	}
 	post_not = lambda {
-		uri = URI.parse("http://localhost/notifications")
+		uri = URI.parse("http://amaya-security.herokuapp.com/notifications")
 	    https = Net::HTTP.new(uri.host,uri.port)
 	    req = Net::HTTP::Post.new(uri.path)
 	    req.add_field("Content-Type", "application/json")

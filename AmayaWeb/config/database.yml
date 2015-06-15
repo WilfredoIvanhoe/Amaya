@@ -5,14 +5,11 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
-  pool: 5
-  timeout: 5000
 
 development:
   adapter: postgresql
   encoding: unicode
-  database: myapp_development
+  database: d6qp8m6ddjhnjh
   pool: 5
   host: ec2-54-83-57-86.compute-1.amazonaws.com
   port: 5432
@@ -24,8 +21,15 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: myapp_development
+  pool: 5
+  host: ec2-54-243-132-114.compute-1.amazonaws.com
+  port: 5432
+  username: lyfadpkoourdqh
+  password: SJ50SC8QVzb_DTDhTxX0R-LTiJ
+  database: ddvfg89hn286fd
+  url: postgres://lyfadpkoourdqh:SJ50SC8QVzb_DTDhTxX0R-LTiJ@ec2-54-243-132-114.compute-1.amazonaws.com:5432/ddvfg89hn286fd

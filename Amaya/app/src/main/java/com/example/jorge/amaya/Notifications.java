@@ -32,7 +32,7 @@ public class Notifications extends ActionBarActivity {
 
         notifications_txt = (TextView)findViewById(R.id.notifications_txt);
 
-            String url = "http://192.168.1.69/notifications/1";
+            String url = "http://amaya-security.herokuapp.com/notifications/1";
 
             RequestQueue queue = Volley.newRequestQueue(this);
 
